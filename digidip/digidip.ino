@@ -101,7 +101,7 @@ File logfile;
 void error()
 {
 	clearDisplaySPI();  // Clears display, resets cursor
-	s7sSendStringSPI("SDEr");  // Displays Sd.Er if the SD card cannot be initiallized
+	s7sSendStringSPI("SDEr");  // Displays Sd.Er. if the SD card cannot be initiallized
 	setDecimalsSPI(0b001010);  
 	while(1);
 }
